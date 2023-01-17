@@ -6,7 +6,10 @@ COPY . .
 
 RUN pnpm install
 
-EXPOSE 3000
+EXPOSE 5001
+
+ENV PORT=5001
+ENV HOST=127.0.0.1
 
 ENTRYPOINT [ "pnpm" ]
 
