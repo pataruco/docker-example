@@ -25,4 +25,6 @@ server.use(httpLoggerMiddleware);
 // Routes
 server.use(router);
 
-server.listen(PORT, () => logger.info(`Server running on 📡  ${HOST}:${PORT}`));
+server.listen(PORT, () =>
+  logger.info(`Server running on 📡  http://${HOST}:${PORT}`),
+);
